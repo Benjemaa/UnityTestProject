@@ -21,11 +21,9 @@ public class Card : MonoBehaviour {
     {
      
     }
-   
-
     public void Flip()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime, Space.World);
+        this.GameObject.transform.Rotate(Vector3.up * Time.deltaTime, Space.World);
         faced = !faced;
     }
 }
