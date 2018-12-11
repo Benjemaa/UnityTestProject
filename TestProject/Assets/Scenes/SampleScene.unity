@@ -173,7 +173,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -1.0999999, y: 5.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -224,10 +225,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -250,9 +251,30 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 10.5, y: 0, z: -56.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538e56d2af9d40d45bc979b2a6de77b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timePerGame: 0
+  cards:
+  - {fileID: 1969582306189480, guid: be8ceb9bd9f3b0b4a8076a608202cc9b, type: 2}
+  - {fileID: 1269085645825984, guid: d440246825936a040bd6d7a3c3a1f21a, type: 2}
+  - {fileID: 1978560940015216, guid: a2adc51f49883c84595e716ae1d6a030, type: 2}
+  - {fileID: 1548913240521062, guid: d08ee8d8e9345df46866ca3adbd0196d, type: 2}
+  - {fileID: 1698496615174850, guid: f4db220e9b4a5974b8bdc647059fd3d9, type: 2}
+  - {fileID: 1564861233930376, guid: 379dbddb9a6b34a4cb81f2661eccae5b, type: 2}
+  - {fileID: 1510374637096090, guid: 04c0a7320b1892f438c2ffc0ed73d5d8, type: 2}
+  - {fileID: 1423768316921668, guid: c24ff5fbf8613d74081289074086cd29, type: 2}
